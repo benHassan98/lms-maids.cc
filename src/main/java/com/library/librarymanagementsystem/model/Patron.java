@@ -20,7 +20,6 @@ public class Patron {
     @ElementCollection
     @CollectionTable(name = "borrowing_records",joinColumns = @JoinColumn(name = "patron_id"))
     @Column(name = "book_id")
-    @JsonIgnore
     private List<Long> bookList = new ArrayList<>();
 
 
